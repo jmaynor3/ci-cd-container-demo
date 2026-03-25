@@ -1,4 +1,3 @@
-rm .github/workflows/build-and-push.yml
 cat <<'YAML' > .github/workflows/build-and-push.yml
 name: Build and Push to ACR
 
