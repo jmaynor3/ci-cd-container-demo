@@ -1,9 +1,10 @@
-cat > .github/workflows/build-and-push.yml <<'YAML'
+cat <<'YAML' > .github/workflows/build-and-push.yml
 name: Build and Push to ACR
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
