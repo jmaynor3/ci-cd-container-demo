@@ -1,3 +1,4 @@
+rm .github/workflows/build-and-push.yml
 cat <<'YAML' > .github/workflows/build-and-push.yml
 name: Build and Push to ACR
 
@@ -26,3 +27,4 @@ jobs:
           docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/demo-app:latest .
           docker push ${{ secrets.ACR_LOGIN_SERVER }}/demo-app:latest
 YAML
+
